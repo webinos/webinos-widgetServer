@@ -1,0 +1,28 @@
+{ "name": "webinos-widget-server",
+  "version": "0.0.1",
+  "description": "Webinos Widget Server",
+  "author": ["Toby Ealden"],
+  "homepage": "http://www.webinos.org",
+  "bugs": "http://jira.webinos.org",
+  "main": "./lib/widgetServer.js",
+  "repositories":
+   { "type": "git",
+     "url": "git://github.com/webinos/webinos-widget-server.git"
+   },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies":{
+    "node-expat": "2.x",
+    "express" : "3.x",
+    "jade" : "0.x.x"
+  },
+  "engines":
+  { "node": ">= 0.6.0",
+    "npm": ">= 1.1.17"
+  },
+  "bundleDependencies":[],
+  "scripts": {
+  }
+}
+
