@@ -4,23 +4,23 @@ block content
 	div.infoPanel
 		div  
 			span= os 
-			span  webinos runtime v0.7.0
+			span  webinos runtime v0.8.05
 		div 
 			span node version 
 			span= nodeVersion
 			br
 		div
 			br
-			span webinos pzp configured to run on localhost:
+			span #{branding.appTitle} pzp configured to run on localhost:
 			=pzpPort
 			br
-			span webinos runtime configured to run on localhost:
+			span #{branding.appTitle} runtime configured to run on localhost:
 			=runtimePort
 		div
 			br
 			span project site 
 			br
-			a(target="_blank",href="http://webinos.org") webinos.org
+			a(target="_blank",href="http://#{branding.appUrl}") #{branding.appUrl}
 			br
 			br
 			span developer portal 

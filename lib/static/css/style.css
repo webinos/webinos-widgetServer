@@ -98,33 +98,6 @@ a:hover
     z-index: 99;
 }
 
-.menuLeft
-{
-    background-image: url('/images/mainMenu-left.png');
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 62px;
-    float:left;
-}
-
-.menuMiddle
-{
-    background-image: url('/images/mainMenu-repeat.png');
-    background-repeat:  repeat-x;
-    min-width: 300px;
-    height: 62px;
-    float:left;
-}
-
-.menuRight
-{
-    background-image: url('/images/mainMenu-right.png');
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 62px;
-    float:left;
-}
-
 .menuItems
 {
     margin-top: 20px;
@@ -201,15 +174,6 @@ a.widget-link
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	padding: 0px 0px 0px 20px;
-}
-
-.footer
-{
-	background-color: #006d88;
-    min-height: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #9FC6D0;
 }
 
 .footerRight

@@ -3,7 +3,7 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="Content-Language",content="en")
-		title webinos | #{pageTitle}
+    title #{branding.appTitle} | #{pageTitle}
 		link(type="text/css",href="/css/style.css",rel="stylesheet")
 		link(rel="icon",href="/images/favicon.ico",type="image/x-icon")
 		script(src='/js/jquery-1.7.2.min.js')
@@ -47,6 +47,43 @@ html(lang="en")
 					alert("webinos not loaded");
 				}
 			});
+    style
+      .menuLeft
+      {
+        background-image: url('/images/#{branding.appTitle}_mainMenu-left.png');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 62px;
+        float:left;
+      }
+
+      .menuMiddle
+      {
+        background-image: url('/images/#{branding.appTitle}_mainMenu-repeat.png');
+        background-repeat:  repeat-x;
+        min-width: 300px;
+        height: 62px;
+        float:left;
+      }
+
+      .menuRight
+      {
+        background-image: url('/images/#{branding.appTitle}_mainMenu-right.png');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 62px;
+        float:left;
+      }
+
+      .footer
+      {
+        background-color: #{branding.colour};
+        min-height: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: #9FC6D0;
+      }
+
 	body
 		div.page
 			div.header
@@ -62,7 +99,7 @@ html(lang="en")
 					div.menuRight
 				div.logo
 					a(href="/")
-						img(src="/images/webinos_logo.png")
+            img(src="/images/#{branding.appTitle}_logo.png")
 
 			div.pageTitleContainer
 				span.pageTitle &nbsp;#{pageTitle}&nbsp;
@@ -71,7 +108,7 @@ html(lang="en")
 			div.footer.commands
 				div.footerRight 
 					span Copyright &copy; 2013 &middot; 
-					a(target="_blank",href="http://webinos.org") webinos.org
+          a(target="_blank",href="http://#{branding.appUrl}") #{branding.appUrl}
 				div.connectionStatus
 					img(id="indicator-connected",src="/images/green-bullet.png",alt="pzp indicator",title="pzp connected")
 					img(id="indicator-not-connected",src="/images/red-bullet.png",alt="pzp indicator",title="pzp NOT connected")
