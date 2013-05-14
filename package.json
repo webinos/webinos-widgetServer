@@ -1,4 +1,4 @@
-{ "name": "webinos-widget-server",
+{ "name": "webinos-widgetServer",
   "version": "0.0.1",
   "description": "Webinos Widget Server",
   "author": ["Toby Ealden"],
