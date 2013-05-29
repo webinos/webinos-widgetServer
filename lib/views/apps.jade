@@ -32,7 +32,7 @@ block content
 			- var listIdx = 0;
 			- while (listIdx < list.length)
 				- var item = list[listIdx];
-				- if (item.name)		
+				- if (item.name || item.shortName)
 					div.widgetListItem
 						div.widgetListItemDetails
 							div.widgetListOptions
@@ -48,8 +48,8 @@ block content
 								- else
 									img(src='/images/no-icon.png', width="64px", height="64px")
 							div.widgetListItemTitle
-								- if (item.name)
-									- var dispName = item.name.unicode;
+								- if (item.name || item.shortName)
+									- var dispName = item.name ? item.name.unicode : item.shortName.unicode;
 									- if (dispName.length > 30)
 										- dispName = dispName.substr(0,30) + "...";
 									a.widgetLaunch(target="_blank",href="/boot/" + item.installId)= dispName
