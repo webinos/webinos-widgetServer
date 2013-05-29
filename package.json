@@ -1,5 +1,5 @@
 { "name": "webinos-widgetServer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webinos Widget Server",
   "author": ["Toby Ealden"],
   "homepage": "http://www.webinos.org",
@@ -16,6 +16,10 @@
     "node-expat": "2.x",
     "express" : "3.x",
     "jade" : "0.x.x"
+  },
+  "devDependencies": {
+    "webinos-utilities" : "git://github.com/webinos/webinos-utilities.git",
+    "webinos-widget" : "git://github.com/webinos/webinos-widget"
   },
   "engines":
   { "node": ">= 0.6.0",
