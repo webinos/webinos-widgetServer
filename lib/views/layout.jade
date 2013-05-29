@@ -15,7 +15,7 @@ html(lang="en")
 				$(".footer").corner("bottom");
 				$("#indicator-connected").hide();
 				$(".slow").click(function() {
-					$(".content").html("<div class='loadingIndicator'><img alt="loading" src='/images/loading.gif' /></div>");
+					$(".content").html("<div class='loadingIndicator'><img alt='loading' src='/images/loading.gif' /></div>");
 					var that = this;
 					setTimeout(function() {  window.location = $(that).attr('href'); }, 150);
 					return false;
