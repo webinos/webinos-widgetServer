@@ -4,7 +4,7 @@ html(lang="en")
 		link(type="text/css",href="/css/style.css",rel="stylesheet")
 		title about #{cfg.shortName ? cfg.shortName.unicode : (cfg.name ? cfg.name.unicode : "widget")}
 		script(type="text/javascript",src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
-		script(type="text/javascript")
+		script(type="text/javascript").
 			$(function() {
 				$(".widgetAboutField").hide();
 				$(".interesting").children().show();
